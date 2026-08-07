@@ -4,7 +4,7 @@
 	"Tokens"
 	{
 		"addon_game_name"							"Merciless RPG"
-		"npc_dota_custom_worm"						"Чeрвячок"
+		"npc_dota_custom_worm"						"Червячок"
 
 		//=================================================================================================================
 		// ОПИСАНИЯ СПОСОБНОСТЕЙ
@@ -20,7 +20,7 @@
 
 		"DOTA_Tooltip_ability_merciless_arc_warden_magnetic_field"		"Magnetic Field"
 		"DOTA_Tooltip_ability_merciless_arc_warden_magnetic_field_Description"	"Пассивно увеличивает скорость атаки Arc Warden и дает шанс уклониться от атак крипов."
-		"DOTA_Tooltip_ability_merciless_arc_warden_magnetic_field_SummaryDescription"	"Пассивный бонус атак спида и уклонения от крипов."
+		"DOTA_Tooltip_ability_merciless_arc_warden_magnetic_field_SummaryDescription"	"Пассивный бонус атаки и уклонение от крипов."
 		"DOTA_Tooltip_ability_merciless_arc_warden_magnetic_field_bonus_attack_speed"	"ДОП. СКОРОСТЬ АТАКИ:"
 		"DOTA_Tooltip_ability_merciless_arc_warden_magnetic_field_creep_evasion"	"%УКЛОНЕНИЕ ОТ КРИПОВ:"
 
