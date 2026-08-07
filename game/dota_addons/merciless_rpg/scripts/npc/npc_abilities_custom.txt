@@ -1,0 +1,225 @@
+"DOTAAbilities"
+{
+	"Version"		"1"
+
+	//=================================================================================================================
+	// СКИЛЛ 1: Flux (AoE Урон + Замедление + Самоурон)
+	//=================================================================================================================
+	"merciless_arc_warden_flux"
+	{
+		"BaseClass"					"ability_lua"
+		"ScriptFile"				"abilities/merciless_arc_warden_flux"
+		"AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
+		"AbilityUnitTargetTeam"		"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"		"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"		"DAMAGE_TYPE_MAGICAL"
+		"AbilityTextureName"		"arc_warden_flux"
+		"AbilityCastRange"			"750"
+		"AbilityCastPoint"			"0.2"
+		"AbilityCooldown"			"12.0 10.0 8.0 6.0"
+		"AbilityManaCost"			"75 90 105 120"
+		"AOERadius"					"300"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"radius"				"300"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage"				"80 140 200 260"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"move_slow"				"30 40 50 70"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"self_damage_per_unit"	"15 20 25 30"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"duration"				"3.0"
+			}
+		}
+	}
+
+	//=================================================================================================================
+	// СКИЛЛ 2: Magnetic Field (Пассивная скорость атаки + Уклонение от крипов)
+	//=================================================================================================================
+	"merciless_arc_warden_magnetic_field"
+	{
+		"BaseClass"					"ability_lua"
+		"ScriptFile"				"abilities/merciless_arc_warden_magnetic_field"
+		"AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityTextureName"		"arc_warden_magnetic_field"
+		"AbilityCooldown"			"0"
+		"AbilityManaCost"			"0"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_attack_speed"	"30 60 120 280"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"creep_evasion"			"15 20 30 50"
+			}
+		}
+	}
+
+	//=================================================================================================================
+	// СКИЛЛ 3: Spark Wraith (AoE до 3 целей одновременно)
+	//=================================================================================================================
+	"merciless_arc_warden_spark_wraith"
+	{
+		"BaseClass"					"ability_lua"
+		"ScriptFile"				"abilities/merciless_arc_warden_spark_wraith"
+		"AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
+		"AbilityUnitTargetTeam"		"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"		"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"		"DAMAGE_TYPE_MAGICAL"
+		"AbilityTextureName"		"arc_warden_spark_wraith"
+		"AbilityCastRange"			"900"
+		"AbilityCastPoint"			"0.2"
+		"AbilityCooldown"			"7.0 6.0 5.0 4.0"
+		"AbilityManaCost"			"80 90 100 110"
+		"AOERadius"					"375"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage"				"60 110 160 210"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"targets_count"			"3"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"search_radius"			"375"
+			}
+		}
+	}
+
+	//=================================================================================================================
+	// СКИЛЛ 4: Tempest Double (Ультимейт - Пассивная 2-я тычка 40%/60%/100%)
+	//=================================================================================================================
+	"merciless_arc_warden_tempest_double"
+	{
+		"BaseClass"					"ability_lua"
+		"ScriptFile"				"abilities/merciless_arc_warden_tempest_double"
+		"AbilityType"				"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityTextureName"		"arc_warden_tempest_double"
+		"MaxLevel"					"3"
+		"AbilityCooldown"			"0"
+		"AbilityManaCost"			"0"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"second_attack_damage_pct"	"40 60 100"
+			}
+		}
+	}
+
+	//=================================================================================================================
+	// КАСТОМНЫЕ ТАЛАНТЫ
+	//=================================================================================================================
+	"special_bonus_merciless_arc_warden_1"
+	{
+		"BaseClass"					"special_bonus_undefined"
+		"AbilityType"				"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"value"						"90"
+				"LinkedSpecialBonusField"		"damage"
+				"LinkedSpecialBonusOperation"	"ADD"
+			}
+		}
+	}
+
+	"special_bonus_merciless_arc_warden_2"
+	{
+		"BaseClass"					"special_bonus_undefined"
+		"AbilityType"				"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"value"						"2"
+				"LinkedSpecialBonusField"		"targets_count"
+				"LinkedSpecialBonusOperation"	"ADD"
+			}
+		}
+	}
+
+	"special_bonus_merciless_arc_warden_3"
+	{
+		"BaseClass"					"special_bonus_undefined"
+		"AbilityType"				"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"value"						"200"
+				"LinkedSpecialBonusField"		"bonus_attack_speed"
+				"LinkedSpecialBonusOperation"	"ADD"
+			}
+		}
+	}
+
+	"special_bonus_merciless_arc_warden_4"
+	{
+		"BaseClass"					"special_bonus_undefined"
+		"AbilityType"				"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_HIDDEN"
+	}
+
+	"special_bonus_merciless_arc_warden_5"
+	{
+		"BaseClass"					"ability_lua"
+		"ScriptFile"				"abilities/special_bonus_merciless_arc_warden"
+		"AbilityType"				"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_HIDDEN"
+	}
+
+	"special_bonus_attack_damage_45"
+	{
+		"BaseClass"					"special_bonus_undefined"
+		"AbilityType"				"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"value"						"45"
+			}
+		}
+	}
+}
