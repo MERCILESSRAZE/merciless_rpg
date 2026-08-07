@@ -1,0 +1,51 @@
+"lang"
+{
+	"Language"		"english"
+	"Tokens"
+	{
+		"addon_game_name"							"Merciless RPG"
+		"npc_dota_custom_worm"						"Worm"
+
+		//=================================================================================================================
+		// ABILITY TOOLTIPS
+		//=================================================================================================================
+		"DOTA_Tooltip_ability_merciless_arc_warden_flux"				"Flux"
+		"DOTA_Tooltip_ability_merciless_arc_warden_flux_Description"		"Deals damage to a small area and slows enemy movement. Arc Warden takes self damage equal to the number of units hit."
+		"DOTA_Tooltip_ability_merciless_arc_warden_flux_SummaryDescription"	"Deals magical damage in an area, slows enemies, and damages Arc Warden."
+		"DOTA_Tooltip_ability_merciless_arc_warden_flux_radius"			"RADIUS:"
+		"DOTA_Tooltip_ability_merciless_arc_warden_flux_damage"			"DAMAGE:"
+		"DOTA_Tooltip_ability_merciless_arc_warden_flux_move_slow"		"SLOW %:"
+		"DOTA_Tooltip_ability_merciless_arc_warden_flux_self_damage_per_unit"	"SELF DAMAGE PER UNIT:"
+		"DOTA_Tooltip_ability_merciless_arc_warden_flux_duration"		"SLOW DURATION:"
+
+		"DOTA_Tooltip_ability_merciless_arc_warden_magnetic_field"		"Magnetic Field"
+		"DOTA_Tooltip_ability_merciless_arc_warden_magnetic_field_Description"	"Passively increases Arc Warden's attack speed and grants evasion from creep attacks."
+		"DOTA_Tooltip_ability_merciless_arc_warden_magnetic_field_SummaryDescription"	"Passive attack speed and evasion from creeps."
+		"DOTA_Tooltip_ability_merciless_arc_warden_magnetic_field_bonus_attack_speed"	"ATTACK SPEED:"
+		"DOTA_Tooltip_ability_merciless_arc_warden_magnetic_field_creep_evasion"	"CREEP EVASION %:"
+
+		"DOTA_Tooltip_ability_merciless_arc_warden_spark_wraith"		"Spark Wraith"
+		"DOTA_Tooltip_ability_merciless_arc_warden_spark_wraith_Description"	"Summons a spirit that attacks up to 3 closest enemies simultaneously."
+		"DOTA_Tooltip_ability_merciless_arc_warden_spark_wraith_SummaryDescription"	"Summons a spirit that attacks multiple enemies at once."
+		"DOTA_Tooltip_ability_merciless_arc_warden_spark_wraith_damage"	"DAMAGE PER TARGET:"
+		"DOTA_Tooltip_ability_merciless_arc_warden_spark_wraith_targets_count"	"NUMBER OF TARGETS:"
+		"DOTA_Tooltip_ability_merciless_arc_warden_spark_wraith_search_radius"	"SEARCH RADIUS:"
+
+		"DOTA_Tooltip_ability_merciless_arc_warden_tempest_double"		"Tempest Double"
+		"DOTA_Tooltip_ability_merciless_arc_warden_tempest_double_Description"	"Passively grants a second attack on each autoattack."
+		"DOTA_Tooltip_ability_merciless_arc_warden_tempest_double_SummaryDescription"	"Grants a second attack on each hit."
+		"DOTA_Tooltip_ability_merciless_arc_warden_tempest_double_second_attack_damage_pct"	"SECOND ATTACK DAMAGE %:"
+
+		//=================================================================================================================
+		// TALENT TOOLTIPS
+		//=================================================================================================================
+		"DOTA_Tooltip_ability_special_bonus_merciless_arc_warden_1"		"Flux deals +90 additional damage"
+		"DOTA_Tooltip_ability_special_bonus_all_stats_15"				"+15 All Stats"
+		"DOTA_Tooltip_ability_special_bonus_merciless_arc_warden_2"		"Spark Wraith +2 targets"
+		"DOTA_Tooltip_ability_special_bonus_gold_income_60"			"+60 Gold Per Minute"
+		"DOTA_Tooltip_ability_special_bonus_merciless_arc_warden_3"		"Magnetic Field +200 attack speed"
+		"DOTA_Tooltip_ability_special_bonus_attack_damage_45"			"+45 Attack Damage"
+		"DOTA_Tooltip_ability_special_bonus_merciless_arc_warden_4"		"Second attack procs modifiers (crits, lifesteal, etc)"
+		"DOTA_Tooltip_ability_special_bonus_merciless_arc_warden_5"		"Gain a random rune every 60 seconds"
+	}
+}
